@@ -20,17 +20,6 @@
     "Body": {
       "type": "richtext"
     },
-    "HeadlineImage": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
     "Slug": {
       "type": "uid",
       "targetField": "Title"
