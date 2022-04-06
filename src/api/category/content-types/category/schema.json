@@ -21,9 +21,9 @@
     },
     "artworks": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToMany",
       "target": "api::artwork.artwork",
-      "mappedBy": "category"
+      "inversedBy": "categories"
     }
   }
 }
