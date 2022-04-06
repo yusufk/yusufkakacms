@@ -23,7 +23,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::artwork.artwork",
-      "inversedBy": "categories"
+      "mappedBy": "categories"
     }
   }
 }
