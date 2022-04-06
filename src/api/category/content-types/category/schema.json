@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "singularName": "category",
+    "pluralName": "categories",
+    "displayName": "Categories",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "artworks": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::artwork.artwork",
+      "inversedBy": "categories"
+    },
+    "Category": {
+      "type": "string"
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Category"
+    }
+  }
+}

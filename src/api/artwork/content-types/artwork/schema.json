@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "artworks",
+  "info": {
+    "singularName": "artwork",
+    "pluralName": "artworks",
+    "displayName": "Artwork",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Title"
+    },
+    "Media": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Description": {
+      "type": "text"
+    },
+    "URL": {
+      "type": "string"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "mappedBy": "artworks"
+    }
+  }
+}
