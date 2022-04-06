@@ -36,11 +36,11 @@
     "URL": {
       "type": "string"
     },
-    "categories": {
+    "category": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "manyToOne",
       "target": "api::category.category",
-      "mappedBy": "artworks"
+      "inversedBy": "artworks"
     }
   }
 }
