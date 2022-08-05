@@ -1,19 +1,19 @@
 module.exports = ({ env }) => [
     'strapi::errors',
     {
-        name: 'strapi::security',
-        config: {
-          contentSecurityPolicy: {
-            useDefaults: true,
-            directives: {
-              'connect-src': ["'self'", 'https:'],
-              'img-src': ["'self'", 'data:', 'blob:', 'cms.kaka.co.za', 'dl.airtable.com', `${env('AWS_BUCKET')}.s3.${env('AWS_REGION')}.amazonaws.com`],
-              'media-src': ["'self'", 'data:', 'blob:', 'cms.kaka.co.za', 'dl.airtable.com',`${env('AWS_BUCKET')}.s3.${env('AWS_REGION')}.amazonaws.com`],
-              upgradeInsecureRequests: null,
-            },
+      name: 'strapi::security',
+      config: {
+        contentSecurityPolicy: {
+          useDefaults: true,
+          directives: {
+            'connect-src': ["'self'", 'https:'],
+            'img-src': ["'self'", 'data:', 'blob:', process.env.STORAGE_URL, process.env.STORAGE_CDN_URL],
+            'media-src': ["'self'", 'data:', 'blob:', process.env.STORAGE_URL, process.env.STORAGE_CDN_URL],
+            upgradeInsecureRequests: null,
           },
         },
       },
+    },
     'strapi::cors',
     'strapi::poweredBy',
     'strapi::logger',
