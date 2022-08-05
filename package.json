@@ -15,7 +15,6 @@
     "@strapi/strapi": "4.3.2",
     "better-sqlite3": "7.4.6",
     "mysql": "^2.18.1",
-    "strapi-plugin-wysiwsg-react-md-editor": "^4.2.0",
     "strapi-provider-upload-azure-storage": "^2.1.0",
     "typescript": "^4.7.4"
   },
