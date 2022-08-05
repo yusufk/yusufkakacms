@@ -2,6 +2,45 @@
 # yarn lockfile v1
 
 
+"@azure/abort-controller@^1.0.0":
+  "integrity" "sha512-TrRLIoSQVzfAJX9H1JeFjzAoDGcoK1IYX1UImfceTZpsyYfWr09Ss1aHW1y5TrrR3iq6RZLBwJ3E24uwPhwahw=="
+  "resolved" "https://registry.npmjs.org/@azure/abort-controller/-/abort-controller-1.1.0.tgz"
+  "version" "1.1.0"
+  dependencies:
+    "tslib" "^2.2.0"
+
+"@azure/core-auth@^1.1.4":
+  "integrity" "sha512-HFrcTgmuSuukRf/EdPmqBrc5l6Q5Uu+2TbuhaKbgaCpP2TfAeiNaQPAadxO+CYBRHGUzIDteMAjFspFLDLnKVQ=="
+  "resolved" "https://registry.npmjs.org/@azure/core-auth/-/core-auth-1.4.0.tgz"
+  "version" "1.4.0"
+  dependencies:
+    "@azure/abort-controller" "^1.0.0"
+    "tslib" "^2.2.0"
+
+"@azure/ms-rest-js@^2.0.0":
+  "integrity" "sha512-0/8rOxAoR9M3qKUdbGOIYtHtQkm4m5jdoDNdxTU0DkOr84KwyAdJuW/RfjJinGyig4h73DNF0rdCl6XowgCYcg=="
+  "resolved" "https://registry.npmjs.org/@azure/ms-rest-js/-/ms-rest-js-2.6.2.tgz"
+  "version" "2.6.2"
+  dependencies:
+    "@azure/core-auth" "^1.1.4"
+    "abort-controller" "^3.0.0"
+    "form-data" "^2.5.0"
+    "node-fetch" "^2.6.7"
+    "tough-cookie" "^3.0.1"
+    "tslib" "^1.10.0"
+    "tunnel" "0.0.6"
+    "uuid" "^8.3.2"
+    "xml2js" "^0.4.19"
+
+"@azure/storage-blob@^10.5.0":
+  "integrity" "sha512-67+0EP7STy9BQgzvN1RgmSvXhxRd044eDgepX7zBp7XslBxz8YGo2cSLm9w5o5Qf1FLCRlwuziRMikaPCLMpVw=="
+  "resolved" "https://registry.npmjs.org/@azure/storage-blob/-/storage-blob-10.5.0.tgz"
+  "version" "10.5.0"
+  dependencies:
+    "@azure/ms-rest-js" "^2.0.0"
+    "events" "^3.0.0"
+    "tslib" "^1.9.3"
+
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.16.7":
   "integrity" "sha512-iAXqUn8IIeBTNd72xsFlgaXHkMBMt6y4HJp1tIaK465CWLT/fG1aqB7ykr95gHHmlBdGbFeWWfyB4NJJ0nmeIg=="
   "resolved" "https://registry.npmjs.org/@babel/code-frame/-/code-frame-7.16.7.tgz"
@@ -2331,6 +2370,13 @@
   "integrity" "sha512-NuHqBY1PB/D8xU6s/thBgOAiAP7HOYDQ32+BFZILJ8ivkUkAHQnWfn6WhL79Owj1qmUnoN/YPhktdIoucipkAQ=="
   "resolved" "https://registry.npmjs.org/@xtuc/long/-/long-4.2.2.tgz"
   "version" "4.2.2"
+
+"abort-controller@^3.0.0":
+  "integrity" "sha512-h8lQ8tacZYnR3vNQTgibj+tODHI5/+l06Au2Pcriv/Gmet0eaj4TwWH41sO9wnHDiQsEj19q0drzdWdeAHtweg=="
+  "resolved" "https://registry.npmjs.org/abort-controller/-/abort-controller-3.0.0.tgz"
+  "version" "3.0.0"
+  dependencies:
+    "event-target-shim" "^5.0.0"
 
 "accepts@^1.3.5", "accepts@~1.3.4", "accepts@~1.3.5", "accepts@~1.3.8":
   "integrity" "sha512-PYAthTa2m2VKxuvSD3DPC/Gy+U+sOA1LAuT8mkmRuvw+NACSaeXEQ+NHcVF7rONl6qcaxV3Uuemwawk+7+SJLw=="
@@ -4676,10 +4722,20 @@
   "resolved" "https://registry.npmjs.org/etag/-/etag-1.8.1.tgz"
   "version" "1.8.1"
 
+"event-target-shim@^5.0.0":
+  "integrity" "sha512-i/2XbnSz/uxRCU6+NdVJgKWDTM427+MqYbkQzD321DuCQJUqOuJKIA0IM2+W2xtYHdKOmZ4dR6fExsd4SXL+WQ=="
+  "resolved" "https://registry.npmjs.org/event-target-shim/-/event-target-shim-5.0.1.tgz"
+  "version" "5.0.1"
+
 "eventemitter3@^4.0.0":
   "integrity" "sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw=="
   "resolved" "https://registry.npmjs.org/eventemitter3/-/eventemitter3-4.0.7.tgz"
   "version" "4.0.7"
+
+"events@^3.0.0":
+  "integrity" "sha512-mQw+2fkQbALzQ7V0MY0IqdnXNOeTtP4r0lN9z7AAawCXgqea7bDii20AYrIBrFd/Hx0M2Ocz6S111CaFkUcb0Q=="
+  "resolved" "https://registry.npmjs.org/events/-/events-3.3.0.tgz"
+  "version" "3.3.0"
 
 "events@^3.2.0":
   "integrity" "sha512-mQw+2fkQbALzQ7V0MY0IqdnXNOeTtP4r0lN9z7AAawCXgqea7bDii20AYrIBrFd/Hx0M2Ocz6S111CaFkUcb0Q=="
@@ -5044,6 +5100,15 @@
   "integrity" "sha1-+8cfDEGt6zf5bFd60e1C2P2sypE= sha512-j0KLYPhm6zeac4lz3oJ3o65qvgQCcPubiyotZrXqEaG4hNagNYO8qdlUrX5vwqv9ohqeT/Z3j6+yW067yWWdUw=="
   "resolved" "https://registry.npmjs.org/forever-agent/-/forever-agent-0.6.1.tgz"
   "version" "0.6.1"
+
+"form-data@^2.5.0":
+  "integrity" "sha512-m21N3WOmEEURgk6B9GLOE4RuWOFf28Lhh9qGYeNlGq4VDXUlJy2th2slBNU8Gp8EzloYZOibZJ7t5ecIrFSjVA=="
+  "resolved" "https://registry.npmjs.org/form-data/-/form-data-2.5.1.tgz"
+  "version" "2.5.1"
+  dependencies:
+    "asynckit" "^0.4.0"
+    "combined-stream" "^1.0.6"
+    "mime-types" "^2.1.12"
 
 "form-data@~2.3.2":
   "integrity" "sha512-1lLKB2Mu3aGP1Q/2eCOx0fNbRMe7XdwktwOruhfqqd0rIJWwN4Dh+E3hrPSlDCXnSR7UtZ1N38rVXm+6+MEhJQ=="
@@ -5972,6 +6037,11 @@
   "version" "2.2.4"
   dependencies:
     "loose-envify" "^1.0.0"
+
+"ip-regex@^2.1.0":
+  "integrity" "sha512-58yWmlHpp7VYfcdTwMTvwMmqx/Elfxjd9RXTDyMsbL7lLWmhMylLEqiYVLKuLzOZqVgiWXD9MfR62Vv89VRxkw=="
+  "resolved" "https://registry.npmjs.org/ip-regex/-/ip-regex-2.1.0.tgz"
+  "version" "2.1.0"
 
 "ip@^1.1.0":
   "integrity" "sha1-vd7XARQpCCjAoDnnLvJfWq7ENUo= sha512-rBtCAQAJm8A110nbwn6YdveUnuZH3WrC36IwkRXxDnq53JvXA2NVQvB7IHyKomxK1MJ4VDNw3UtFDdXQ+AvLYA=="
@@ -7819,7 +7889,7 @@
   "resolved" "https://registry.npmjs.org/node-addon-api/-/node-addon-api-4.3.0.tgz"
   "version" "4.3.0"
 
-"node-fetch@^2.6.1", "node-fetch@2.6.7":
+"node-fetch@^2.6.1", "node-fetch@^2.6.7", "node-fetch@2.6.7":
   "integrity" "sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ=="
   "resolved" "https://registry.npmjs.org/node-fetch/-/node-fetch-2.6.7.tgz"
   "version" "2.6.7"
@@ -10418,6 +10488,13 @@
     "@uiw/react-md-editor" "2.1.11"
     "styled-components" "^5.3.3"
 
+"strapi-provider-upload-azure-storage@^2.1.0":
+  "integrity" "sha512-Mfr1DtHQ8IxVjuZlsT4h7/7FM+kj9Qmaq91g0dzpjHF1azR3qWWcT5x0SpOzqA7ipTH/UTE4qKf9Djrpm04kdg=="
+  "resolved" "https://registry.npmjs.org/strapi-provider-upload-azure-storage/-/strapi-provider-upload-azure-storage-2.1.0.tgz"
+  "version" "2.1.0"
+  dependencies:
+    "@azure/storage-blob" "^10.5.0"
+
 "strapi-utils@3.6.10":
   "integrity" "sha512-VpV9A9nqA4mkgUtlRNOMt0s1eCu0y6jKZ39Og8opTvxVud/aAnBKlDk7WaU70Mea/NtiPwUb9/fOLh7SAnOD9Q=="
   "resolved" "https://registry.npmjs.org/strapi-utils/-/strapi-utils-3.6.10.tgz"
@@ -10936,6 +11013,15 @@
   "resolved" "https://registry.npmjs.org/toposort/-/toposort-2.0.2.tgz"
   "version" "2.0.2"
 
+"tough-cookie@^3.0.1":
+  "integrity" "sha512-yQyJ0u4pZsv9D4clxO69OEjLWYw+jbgspjTue4lTQZLfV0c5l1VmK2y1JK8E9ahdpltPOaAThPcp5nKPUgSnsg=="
+  "resolved" "https://registry.npmjs.org/tough-cookie/-/tough-cookie-3.0.1.tgz"
+  "version" "3.0.1"
+  dependencies:
+    "ip-regex" "^2.1.0"
+    "psl" "^1.1.28"
+    "punycode" "^2.1.1"
+
 "tough-cookie@~2.5.0":
   "integrity" "sha512-nlLsUzgm1kfLXSXfRZMc1KLAugd4hqJHDTvc2hDIwS3mZAfMEuMbc03SujMF+GEcpaX/qboeycw6iO8JwVv2+g=="
   "resolved" "https://registry.npmjs.org/tough-cookie/-/tough-cookie-2.5.0.tgz"
@@ -10974,7 +11060,7 @@
   "resolved" "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz"
   "version" "1.14.1"
 
-"tslib@^2.0.1", "tslib@^2.0.3", "tslib@^2.1.0":
+"tslib@^2.0.1", "tslib@^2.0.3", "tslib@^2.1.0", "tslib@^2.2.0":
   "integrity" "sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw=="
   "resolved" "https://registry.npmjs.org/tslib/-/tslib-2.3.1.tgz"
   "version" "2.3.1"
@@ -10995,6 +11081,11 @@
   "version" "0.6.0"
   dependencies:
     "safe-buffer" "^5.0.1"
+
+"tunnel@0.0.6":
+  "integrity" "sha512-1h/Lnq9yajKY2PEbBadPXj3VxsDDu844OnaAo52UVmIzIvwwtBPIuNvkjuzBlTWpfJyUbG3ez0KSBibQkj4ojg=="
+  "resolved" "https://registry.npmjs.org/tunnel/-/tunnel-0.0.6.tgz"
+  "version" "0.0.6"
 
 "tweetnacl@^0.14.3", "tweetnacl@~0.14.0":
   "integrity" "sha1-WuaBd/GS1EViadEIr6k/+HQ/T2Q= sha512-KXXFFdAbFXY4geFIwoyNK+f5Z1b7swfXABfL7HXCmoIWMKU3dmS26672A4EeQtDzLKy7SXmfBu51JolvEKwtGA=="
@@ -11676,7 +11767,7 @@
   "resolved" "https://registry.npmjs.org/xdg-basedir/-/xdg-basedir-4.0.0.tgz"
   "version" "4.0.0"
 
-"xml2js@0.4.19":
+"xml2js@^0.4.19", "xml2js@0.4.19":
   "integrity" "sha512-esZnJZJOiJR9wWKMyuvSE1y6Dq5LCuJanqhxslH2bxM6duahNZ+HMpCLhBQGZkbX6xRf8x1Y2eJlgt2q3qo49Q=="
   "resolved" "https://registry.npmjs.org/xml2js/-/xml2js-0.4.19.tgz"
   "version" "0.4.19"
