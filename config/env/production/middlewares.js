@@ -7,8 +7,8 @@ module.exports = ({ env }) => [
           useDefaults: true,
           directives: {
             'connect-src': ["'self'", 'https:'],
-            'img-src': ["'self'", 'data:', 'blob:', process.env.STORAGE_URL, process.env.STORAGE_CDN_URL],
-            'media-src': ["'self'", 'data:', 'blob:', process.env.STORAGE_URL, process.env.STORAGE_CDN_URL],
+            'img-src': ["'self'", 'data:', 'blob:', env('STORAGE_URL'), env('STORAGE_CDN_URL')],
+            'media-src': ["'self'", 'data:', 'blob:', env('STORAGE_URL'), env('STORAGE_CDN_URL')],
             upgradeInsecureRequests: null,
           },
         },
