@@ -1,6 +1,9 @@
 //  path: config/plugins.js
 
 module.exports = ({ env }) => ({
+  'import-export-entries': {
+    enabled: true,
+  },
     upload: {
       config: {
         provider: 'strapi-provider-upload-azure-storage',
