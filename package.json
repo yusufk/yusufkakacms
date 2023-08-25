@@ -2,35 +2,37 @@
   "name": "yusufkakacms",
   "private": true,
   "version": "0.1.1",
-  "description": "A Strapi application",
+  "description": "CMS for yusuf.kaka.co.za",
   "scripts": {
     "develop": "strapi develop",
-    "start": "strapi start",
+    "start": "node node_modules/@strapi/strapi/bin/strapi.js start",
     "build": "strapi build",
     "strapi": "strapi"
   },
   "dependencies": {
+    "@strapi/plugin-graphql": "^4.12.5",
     "@strapi/plugin-i18n": "4.12.6",
-    "@strapi/plugin-open-ai": "^1.0.1",
     "@strapi/plugin-users-permissions": "4.12.6",
-    "@strapi/provider-email-sendmail": "^4.12.5",
-    "@strapi/provider-upload-aws-s3": "^4.12.5",
     "@strapi/strapi": "4.12.6",
-    "better-sqlite3": "^7.6.2",
-    "pg": "^8.7.3",
-    "pg-connection-string": "^2.5.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "mysql": "^2.18.1",
     "strapi-plugin-import-export-entries": "^1.21.1",
-    "strapi-plugin-wysiwyg-react-md-editor": "^4.3.0"
+    "strapi-provider-upload-azure-storage": "^2.1.0",
+    "@strapi/provider-email-sendmail": "^4.12.5",
+    "strapi-plugin-wysiwyg-react-md-editor": "^4.3.0",
+    "typescript": "^4.7.4"
+  },
+  "devDependencies": {
+    "better-sqlite3": "7.4.6"
   },
   "author": {
+    "name": "Yusuf Kaka"
     "name": "Yusuf Kaka"
   },
   "strapi": {
     "uuid": "b1bbd20e-4a98-4b70-8c15-0e7bfb206d33"
   },
   "engines": {
+    "node": ">=16.x.x <=20.x.x",
     "node": ">=16.x.x <=20.x.x",
     "npm": ">=6.0.0"
   },
