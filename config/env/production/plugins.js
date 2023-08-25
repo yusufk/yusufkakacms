@@ -16,5 +16,20 @@ module.exports = ({ env }) => ({
         },
       },
     },
+    email: {
+      config: {
+        provider: 'sendmail',
+        settings: {
+          defaultFrom: 'yusuf@kaka.co.za',
+          defaultReplyTo: 'yusuf@kaka.co.za',
+        },
+      },
+    },
+    'open-ai': {
+      enabled: true,
+      config: {
+        API_TOKEN: env('OPENAPI_KEY'),
+      },
+    },
     // ...
   });
